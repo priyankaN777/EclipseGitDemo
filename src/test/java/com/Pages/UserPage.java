@@ -16,6 +16,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.objectrepository.UserObjectRepository;
+import com.utilities.Log4jPage;
+import com.utilities.ReadExcelDataWithPOI;
 import com.utilities.ReadExcelDateWithJXL;
 
 public class UserPage extends UserObjectRepository {
@@ -36,11 +38,13 @@ public class UserPage extends UserObjectRepository {
 		for(WebElement mob :mobiles) {
 			String text = mob.getText();
 			if(text.length()==10) {
-				System.out.println("correct mobile number is :"+text);
+				//System.out.println("correct mobile number is :"+text);
+				 Log4jPage.pageLogs().info("correct mobile number is :"+text);
 				al.add(!flag);
 			}
 			else {
-				System.out.println("Incorrect mobile number is :"+text);
+				//System.out.println("Incorrect mobile number is :"+text);
+				 Log4jPage.pageLogs().info("correct mobile number is :"+text);
 				al.add(flag);
 			}
 		}
@@ -85,17 +89,18 @@ public class UserPage extends UserObjectRepository {
 	public HashMap verifyTableWithHashmapExcel() {
 		HashMap<String , List<String>> expData = new HashMap<String , List<String>>();
 		String expKey=null;
-		ReadExcelDateWithJXL rd= new ReadExcelDateWithJXL();
+		ReadExcelDataWithPOI rd= new ReadExcelDataWithPOI();
 		for(int i=0;i<5;i++) {
 			ArrayList<String> expAl = new ArrayList<String>();
-			expKey= rd.getData(i, 0);
+			expKey= rd.getData(i, 0,"ExcelSheet.xlsx","Sheet1");
 			for(int j=1;j<8;j++) {
-				expAl.add(rd.getData(i, j));
+				expAl.add(rd.getData(i, j, "ExcelSheet.xlsx","Sheet1"));
 			}
 		expData.put(expKey, expAl);
 		}
 		
-		System.out.println("Exp data with hashmap"+expData);
+		//System.out.println("Exp data with hashmap"+expData);
+	    Log4jPage.pageLogs().info("Exp data with hashmap"+expData);
 		return expData;
 	}
 	
@@ -140,9 +145,9 @@ public class UserPage extends UserObjectRepository {
 	public HashMap converExcelToHashMAp()
 	 {
 		HashMap<Integer,ArrayList<String>> hm=new HashMap<Integer, ArrayList<String>>();
-			ReadExcelDateWithJXL read = new ReadExcelDateWithJXL();
+			ReadExcelDataWithPOI read = new ReadExcelDataWithPOI();
 			
-			 Object[][] expecteddata=read.loginData();
+			 Object[][] expecteddata=read.loginData("ExcelSheet.xlsx","Sheet1");
 			 boolean flag=false;
 			 
 		 
@@ -155,7 +160,7 @@ public class UserPage extends UserObjectRepository {
 					{
 						if (j==1)
 						{
-							String s= (String) expecteddata[i][j];
+							String s=  (String) expecteddata[i][j];
 							collist.add(s);
 						}
 						else if (j==5)
@@ -250,9 +255,9 @@ public class UserPage extends UserObjectRepository {
 	
 	 public boolean compare()
 	 {
-			ReadExcelDateWithJXL read = new ReadExcelDateWithJXL();
+		 ReadExcelDataWithPOI read = new ReadExcelDataWithPOI();
 			 Object[][] actualdata=getData();
-			 Object[][] expecteddata=read.loginData();
+			 Object[][] expecteddata=read.loginData( "ExcelSheet.xlsx","Sheet1");
 			 boolean flag=false;
 			 
 			 System.out.println("Act"+actualdata);
@@ -266,13 +271,16 @@ public class UserPage extends UserObjectRepository {
 					if (actualdata[i][j].equals(expecteddata[i][j]))
 					{
 						flag=true;
-						System.out.println("Values : " +i+ " " +j+  flag);
+						//System.out.println("Values : " +i+ " " +j+  flag);
+						Log4jPage.pageLogs().info("Values : " +i+ " " +j+  flag);
+						
 					}
 					
 					else
 					{
 						flag=false;
-						System.out.println("Values : " +i+ " " +j+  flag);
+						//System.out.println("Values : " +i+ " " +j+  flag);
+						Log4jPage.pageLogs().info("Values : " +i+ " " +j+  flag);
 						break Outerloop;
 					}
 				}

@@ -1,5 +1,6 @@
 package com.Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -31,6 +32,14 @@ public class LoginPage extends LoginObjectRepository {
 		loginbutton.click();
 	}
 	
+	public boolean verifyLogo()
+	{
+		boolean img = image.isDisplayed();
+		System.out.println(img);
+		return img;
+	}
+	
+	  
 	
 	public DashboardPage navigateToDashboard()
 	{

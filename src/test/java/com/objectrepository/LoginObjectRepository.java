@@ -18,6 +18,10 @@ public class LoginObjectRepository {
 	@FindBy(xpath="//button")
 	public WebElement loginbutton;
 	
+
+	@FindBy(xpath="//img[@src = '../images/jbk.png']")
+	public WebElement image;
+	
 	
 
 
