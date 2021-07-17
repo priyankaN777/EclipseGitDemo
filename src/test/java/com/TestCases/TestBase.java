@@ -49,7 +49,7 @@ public class TestBase
 	  public void setup()
 	  {
 		  
-		  System.out.println("Beforesuite method");
+		 
 		  htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/STMExtentReport.html");
 	  	 //Create an object of Extent Reports
 	      extent = new ExtentReports(); 
@@ -62,6 +62,7 @@ public class TestBase
 			htmlReporter.config().setReportName("Name of the Report Comes here "); 
 			          // Dark Theme
 			htmlReporter.config().setTheme(Theme.STANDARD); 
+			 System.out.println("Beforesuite method");
 			
 	  }
   

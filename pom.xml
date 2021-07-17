@@ -3,7 +3,10 @@
   <groupId>com</groupId>
   <artifactId>JBKOfflineProject</artifactId>
   <version>0.0.2-SNAPSHOT</version>
-  <!-- Tester 1 code -->
+  <!-- Tester 1 code Updated -->
+
+
+
   <build>
 	  <plugins>
 	  		<plugin>
