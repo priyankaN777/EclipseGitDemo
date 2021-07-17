@@ -1,0 +1,77 @@
+2021-07-10 08:55:05,882  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 08:55:25,344  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 08:55:27,484  INFO [main] DashboardTest:96 - Intitializing chrome driver
+2021-07-10 08:55:36,392  INFO [main] UserTest:96 - Intitializing chrome driver
+2021-07-10 08:55:50,184  INFO [main] OperatorTest:96 - Intitializing chrome driver
+2021-07-10 08:56:01,356  INFO [main] UsefulLinksTest:96 - Intitializing chrome driver
+2021-07-10 08:56:08,889  INFO [main] DownloadTest:96 - Intitializing chrome driver
+2021-07-10 08:57:03,956  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 08:57:14,253  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 08:59:17,522  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 08:59:23,803  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 09:02:41,974  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 09:02:48,597  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 09:15:17,062  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 09:15:25,316  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 09:16:39,834  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 09:16:46,743  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 09:20:54,605  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 09:21:01,521  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 09:21:59,919  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 09:22:06,006  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 09:35:54,982  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 09:36:02,261  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 10:28:21,766  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 10:28:52,223  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 10:28:54,164  INFO [main] DashboardTest:96 - Intitializing chrome driver
+2021-07-10 10:29:02,047  INFO [main] UserTest:96 - Intitializing chrome driver
+2021-07-10 10:29:20,073  INFO [main] OperatorTest:96 - Intitializing chrome driver
+2021-07-10 10:29:34,708  INFO [main] UsefulLinksTest:96 - Intitializing chrome driver
+2021-07-10 10:29:45,818  INFO [main] DownloadTest:96 - Intitializing chrome driver
+2021-07-10 10:32:12,302  INFO [main] LoginTest:96 - Intitializing chrome driver
+2021-07-10 10:32:19,057  INFO [main] LoginTest:28 - in openbrowser of logintest
+2021-07-10 14:39:24,911  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 14:39:37,935  INFO [main] LoginTest:32 - in openbrowser of logintest
+2021-07-10 15:02:34,013  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 15:02:47,189  INFO [main] LoginTest:33 - in openbrowser of logintest
+2021-07-10 15:07:08,393  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 15:07:13,758  INFO [main] LoginTest:33 - in openbrowser of logintest
+2021-07-10 15:16:25,344  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 15:16:30,496  INFO [main] LoginTest:33 - in openbrowser of logintest
+2021-07-10 15:17:10,246  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 15:17:15,334  INFO [main] LoginTest:33 - in openbrowser of logintest
+2021-07-10 15:19:09,439  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 15:19:14,341  INFO [main] LoginTest:34 - in openbrowser of logintest
+2021-07-10 15:44:25,576  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 15:44:30,501  INFO [main] LoginTest:34 - in openbrowser of logintest
+2021-07-10 16:43:51,199  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 16:43:57,340  INFO [main] LoginTest:34 - in openbrowser of logintest
+2021-07-10 16:47:04,571  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 16:47:09,279  INFO [main] LoginTest:34 - in openbrowser of logintest
+2021-07-10 16:47:57,739  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 16:48:04,469  INFO [main] LoginTest:34 - in openbrowser of logintest
+2021-07-10 16:48:43,443  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 16:48:50,062  INFO [main] LoginTest:34 - in openbrowser of logintest
+2021-07-10 16:48:52,216  INFO [main] DashboardTest:91 - Intitializing chrome driver
+2021-07-10 16:48:59,965  INFO [main] UserTest:91 - Intitializing chrome driver
+2021-07-10 16:49:11,761  INFO [main] OperatorTest:91 - Intitializing chrome driver
+2021-07-10 16:49:20,311  INFO [main] UsefulLinksTest:91 - Intitializing chrome driver
+2021-07-10 16:49:26,407  INFO [main] DownloadTest:91 - Intitializing chrome driver
+2021-07-10 16:51:11,236  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 16:51:16,300  INFO [main] LoginTest:34 - in openbrowser of logintest
+2021-07-10 16:59:01,690  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-10 16:59:08,217  INFO [main] LoginTest:39 - in openbrowser of logintest
+2021-07-13 11:10:05,830  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-13 11:10:38,429  INFO [main] LoginTest:39 - in openbrowser of logintest
+2021-07-13 11:10:38,559  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-13 11:10:45,616  INFO [main] LoginTest:39 - in openbrowser of logintest
+2021-07-13 11:10:49,496  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-13 11:11:08,874  INFO [main] LoginTest:39 - in openbrowser of logintest
+2021-07-13 11:12:59,534  INFO [main] LoginTest:91 - Intitializing chrome driver
+2021-07-13 11:13:06,520  INFO [main] LoginTest:39 - in openbrowser of logintest
+2021-07-13 11:19:37,769  INFO [main] LoginTest:98 - Intitializing chrome driver
+2021-07-13 11:19:44,874  INFO [main] LoginTest:39 - in openbrowser of logintest
+2021-07-13 11:21:48,954  INFO [main] LoginTest:99 - Intitializing chrome driver
+2021-07-13 11:21:54,794  INFO [main] LoginTest:39 - in openbrowser of logintest
+2021-07-13 11:27:16,664  INFO [main] LoginTest:100 - Intitializing chrome driver
+2021-07-13 11:27:21,316  INFO [main] LoginTest:39 - in openbrowser of logintest

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Sonu\AppData\Local\Temp\testng-eclipse--196005855\testng-customsuite.xml</span>
+                    <span>C:\Users\Sonu\AppData\Local\Temp\testng-eclipse--1879701367\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,29 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.TestCases.UserTest" hash-for-method="mobileTest">mobileTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.TestCases.LoginTest" hash-for-method="verifyLogo">verifyLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.TestCases.LoginTest" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.TestCases.LoginTest" hash-for-method="verifyDLoginTitle">verifyDLoginTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,24 +141,46 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.TestCases.UserTest</span>
+              <span class="class-name">com.TestCases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="mobileTest">
-                  </a> <!-- mobileTest -->
-                  <span class="method-name">mobileTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [false] but found [true],
-	expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at com.TestCases.UserTest.mobileTest(UserTest.java:78)
+                  <a name="verifyLogo">
+                  </a> <!-- verifyLogo -->
+                  <span class="method-name">verifyLogo</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@src = &apos;../images/jbk.png&apos;]&quot;}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-4&apos;, revision: &apos;29f46d02dd&apos;
+System info: host: &apos;DESKTOP-IGE51IO&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d93bc9b657d1655759b6fdc27217af44, findElement {using=xpath, value=//img[@src = &apos;../images/jbk.png&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\Sonu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61047/devtoo..., se:cdpVersion: 91.0.4472.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d93bc9b657d1655759b6fdc27217af44
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
+	at com.Pages.LoginPage.verifyLogo(LoginPage.java:37)
+	at com.TestCases.LoginTest.verifyLogo(LoginTest.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -148,7 +189,7 @@
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.ArrayList.forEach(Unknown Source)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -170,10 +211,32 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.TestCases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDLoginTitle">
+                  </a> <!-- verifyDLoginTitle -->
+                  <span class="method-name">verifyDLoginTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sonu\AppData\Local\Temp\testng-eclipse--196005855\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sonu\AppData\Local\Temp\testng-eclipse--1879701367\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,11 +245,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.TestCases.UserTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;mobileTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.TestCases.UserTest --&gt;
+      &lt;class name=&quot;com.TestCases.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -226,16 +285,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'mobileTest')
-data.setCell(0, 2, 'com.TestCases.UserTest')
-data.setCell(0, 3, 107);
+data.setCell(0, 1, 'validLogin')
+data.setCell(0, 2, 'com.TestCases.LoginTest')
+data.setCell(0, 3, 937);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLogo')
+data.setCell(1, 2, 'com.TestCases.LoginTest')
+data.setCell(1, 3, 27);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyDLoginTitle')
+data.setCell(2, 2, 'com.TestCases.LoginTest')
+data.setCell(2, 3, 14);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 107 ms</span>
+              <span class="suite-total-time">Total running time: 978 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -250,22 +317,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.TestCases.UserTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">CompareTableWithHashmap</span>
-                <br/>
-                <span class="ignored-method-name">compareGenderAndName</span>
-                <br/>
-                <span class="ignored-method-name">CompareTableWithoutHashmap</span>
-                <br/>
-                <span class="ignored-method-name">verifyUserTitle</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -274,20 +328,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.TestCases.UserTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.TestCases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">allPages</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">157 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyDLoginTitle</span>
+                <span class="method-start">4847 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyDLoginTitle status=SUCCESS method=LoginTest.verifyDLoginTitle()[pri:1, instan...)</span>
+                <span class="method-start">4866 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">mobileTest</span>
-                <span class="method-start">12801 ms</span>
+                <span class="method-name">verifyLogo</span>
+                <span class="method-start">4884 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyLogo status=FAILURE method=LoginTest.verifyLogo()[pri:2, instance:com.TestCas...)</span>
+                <span class="method-start">4919 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">5060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=validLogin status=SUCCESS method=LoginTest.validLogin()[pri:3, instance:com.TestCas...)</span>
+                <span class="method-start">5998 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">12908 ms</span>
+                <span class="method-start">6000 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

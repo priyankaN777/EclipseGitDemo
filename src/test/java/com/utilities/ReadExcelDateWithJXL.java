@@ -53,13 +53,13 @@ public class ReadExcelDateWithJXL
 	}
 	
 	
-	public String getData(int rowno, int colno)
+	public String getData(int rowno, int colno, String filename, String sheetname)
 	{
 		String data=null;
 		
 		try 
 		{
-			fis = new FileInputStream("ExcelSheet.xls");
+			fis = new FileInputStream(filename);
 			wb= Workbook.getWorkbook(fis);
 		} 
 		catch (Exception e)
@@ -67,7 +67,8 @@ public class ReadExcelDateWithJXL
 			e.printStackTrace();
 		}
 		
-		Sheet sh=wb.getSheet("Sheet1");
+		Sheet sh=wb.getSheet(sheetname);
+	//	System.out.println(sh.getName());
 		int rows =sh.getRows();
 		int cols = sh.getColumns();
 		dataArr =  new String[rows][cols];

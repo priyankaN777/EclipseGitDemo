@@ -32,6 +32,18 @@ public class DashboardTest extends TestBase{
 		   
 	   }
 	  
+	  @Test (priority=2)
+	   public void verifyCourseColour()
+	   {
+	     dp.verifyCourseColour();
+	   }
+	  
+	  @Test (priority=3)
+	   public void verifyCourseSymbol()
+	   {
+	     dp.verifyCourseSymbol();
+	   }
+	  
 	  @AfterClass
 	   public void closeBrowser()
 	   {
