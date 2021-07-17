@@ -37,7 +37,7 @@ public class LoginTest extends TestBase
 	   driver=launchApplication();
 	   lp=loadLoginPage();
 	   testLogs().info("in openbrowser of logintest");
-	   
+	   testLogs().info("Inside BeforeClass of loginTest");
    }
    
    @Test (priority=1)
